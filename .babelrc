@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "react",
+    ["env", {
+      "targets": {
+        "browsers": ["> 1%", "Android >= 4.4", "IOS >= 7", "ie >= 9"],
+        "node": "4.0"
+      }
+    }],
+    "stage-0"
+  ],
+
+  "plugins": [
+    "add-module-exports",
+    "transform-decorators-legacy",
+    "transform-react-display-name",
+    [ "react-css-modules", { "exclude": "node_modules", "generateScopedName": "[name]-[local]-[hash:base64:5]", "webpackHotModuleReloading": true } ]
+  ]
+}

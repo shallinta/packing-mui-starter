@@ -1,0 +1,13 @@
+extends {{pathLayers}}layout/default.pug
+
+block title
+  title {{title}}
+
+block append style
+  link(type="text/css" rel="stylesheet" href="/{{page}}/index.css")
+
+block append script
+  script(src="/{{page}}/index.js")
+
+block content
+  div#app

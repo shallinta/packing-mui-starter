@@ -1,0 +1,29 @@
+.page-container {
+  flex: 1;
+  display: flex;
+
+  & .page-loading { }
+
+  & .page-error {
+    & .error-text {
+      margin: calc(50vh - 30px) auto;
+      height: 60px;
+      line-height: 60px;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+
+  & .title {
+    flex: 1;
+  }
+}
+
+.page-content-container {
+  flex: 1;
+  padding: 20px;
+  min-width: 320px;
+  background: #f7f7f7;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

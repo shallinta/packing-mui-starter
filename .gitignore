@@ -1,0 +1,13 @@
+npm-debug.log
+node_modules/
+/prd/
+/dist/
+/templates/
+/stats.json
+.idea/
+/.tmp/
+
+package-lock.json
+.DS_Store
+.vscode/
+.swp

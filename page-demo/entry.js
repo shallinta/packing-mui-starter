@@ -1,6 +1,7 @@
 /**
- * {{demo}} 页面入口
- * {{date}}
+* {{title}} 页面入口
+* {{pageName}}
+* {{date}}
  */
 
 import 'typeface-roboto';

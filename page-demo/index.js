@@ -1,5 +1,6 @@
 /**
- * {{demo}} 页面
+ * {{title}} 页面
+ * {{pageName}}
  * {{date}}
  */
 

@@ -1,5 +1,6 @@
 /**
- * {{demo}} 页面 store文件
+ * {{title}} 页面 store文件
+ * {{pageName}}
  * {{date}}
  */
 

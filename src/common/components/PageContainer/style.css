@@ -14,16 +14,31 @@
     }
   }
 
-  & .title {
+  & .spacing {
     flex: 1;
+  }
+  & .user-sign-area {
+    margin-right: 20px;
+    & .username {
+      text-transform: none;
+      font-size: 1rem;
+    }
   }
 }
 
 .page-content-container {
-  flex: 1;
-  padding: 20px;
-  min-width: 320px;
+  min-width: 800px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   background: #f7f7f7;
   overflow-x: hidden;
   overflow-y: auto;
+    & .content {
+    margin-top: 20px;
+    margin-bottom: 60px;
+    &.no-paper {
+      flex: 1;
+    }
+  }
 }

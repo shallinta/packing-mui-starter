@@ -26,17 +26,27 @@ class Page extends React.Component {
   render() {
     const { loadStatus } = store;
 
+    const fab = {
+      text: 'Floating Action Button',
+      fabList: [
+        {
+          icon: <AddIcon />,
+          text: '示例按钮'
+        }
+      ]
+    };
+
     return (
-      <PageContainer styleName="content-container" loadStatus={loadStatus}>
+      <PageContainer styleName="content-container" loadStatus={loadStatus} paper fab={fab}>
         <h2>Title</h2>
         <p>Code html here</p>
         <div>
-          <Button raised color="secondary">Button</Button>
+          <Button variant="raised" color="secondary">Button</Button>
         </div>
         <br />
-        <Button fab color="primary" aria-label="add">
-          <AddIcon />
-        </Button>
+        <div>
+          <Button color="primary">Button</Button>
+        </div>
       </PageContainer>
     );
   }

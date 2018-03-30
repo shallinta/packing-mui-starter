@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Reboot from 'material-ui/Reboot';
+import CssBaseline from 'material-ui/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
 import blue from 'material-ui/colors/blue';
 import pink from 'material-ui/colors/pink';
@@ -28,7 +28,7 @@ class ThemeProvider extends React.Component {
     const { children } = this.props;
     return (
       <MuiThemeProvider theme={theme}>
-        <Reboot />
+        <CssBaseline />
         {children}
       </MuiThemeProvider>
     );

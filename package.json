@@ -40,11 +40,11 @@
     "eslint": "^4.12.1",
     "express": "^4.14.1",
     "open-browser-webpack-plugin": "^0.0.5",
-    "packing-template-pug": "^1.1.7",
+    "packing-template-pug": "^2.0.4",
     "packing-urlrewrite": "^0.1.7",
     "pre-commit": "^1.2.2",
     "standard-version": "^4.3.0",
-    "webpack-dev-middleware": "^2.0.0",
+    "webpack-dev-middleware": "^3.1.0",
     "webpack-hot-middleware": "^2.17.0"
   },
   "engines": {

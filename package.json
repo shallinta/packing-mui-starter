@@ -10,6 +10,7 @@
     "build:prod": "NODE_ENV=production packing build",
     "serve": "packing serve",
     "serve:dist": "packing build && packing serve-dist",
+    "newpage": "node newpage",
     "eslint": "echo '\"npm run eslint\" will be scrapped in version 3. Please use \"npm run lint\" instead' && npm run lint",
     "lint": "eslint --fix src",
     "release": "standard-version"
@@ -21,12 +22,12 @@
     "babel-plugin-react-css-modules": "^3.3.3",
     "babel-preset-stage-0": "^6.24.1",
     "classnames": "^2.2.5",
-    "material-ui": "^1.0.0-beta.30",
+    "material-ui": "^1.0.0-beta.39",
     "material-ui-icons": "^1.0.0-beta.17",
     "mkdirp": "^0.5.1",
     "mobx": "^3.4.1",
     "mobx-react": "^4.3.5",
-    "packing": "^2.6.0",
+    "packing": "^3.0.0-beta.2",
     "postcss-cssnext": "^3.0.2",
     "react": "^16.2.0",
     "react-a11y": "^1.0.0",
@@ -43,7 +44,7 @@
     "packing-urlrewrite": "^0.1.7",
     "pre-commit": "^1.2.2",
     "standard-version": "^4.3.0",
-    "webpack-dev-middleware": "^1.10.0",
+    "webpack-dev-middleware": "^2.0.0",
     "webpack-hot-middleware": "^2.17.0"
   },
   "engines": {

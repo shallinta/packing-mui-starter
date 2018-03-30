@@ -13,25 +13,25 @@ A webpack project using material design. React and MobX are used as well.
 
 
 ## 创建初始化新页面
-方法1. 使用命令 `node newpage`，根据命令行交互提示逐步输入参数来创建。  
+方法1. 使用命令 `npm run newpage`，根据命令行交互提示逐步输入参数来创建。  
 方法2. 使用命令+参数一次性创建，跳过交互步骤，命令如下：
 
 ```sh
 # 一次性创建命令
-node newpage {页面名} {页面标题}
+npm run newpage {页面名} {页面标题}
 
 # 示例： 创建 about 页面
-node newpage about 关于
+npm run newpage about 关于
 ```
 
 创建同一目录下多页面时，使用目录+页面名，例如：
 
 ``` sh
 # 资源位管理 列表页
-node newpage resources-manage/index
+npm run newpage resources-manage/index
 
 # 资源位管理 详情页
-node newpage resources-manage/detail
+npm run newpage resources-manage/detail
 ```
 
 

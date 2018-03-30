@@ -29,12 +29,13 @@ export default (packing) => {
     vendor: [
       'react',
       'react-dom',
-      'prop-types'
-      // 'classnames',
-      // 'mobx',
-      // 'mobx-react',
-      // 'lodash',
-      // 'moment'
+      'prop-types',
+      'classnames',
+      'mobx',
+      'mobx-react',
+      'material-ui',
+      'material-ui-icons',
+      'typeface-roboto'
     ]
   };
 
@@ -45,8 +46,7 @@ export default (packing) => {
     const cwd = path.resolve(entryPath);
     const config = {};
     packingGlob(entryPattern, { cwd }).forEach((page) => {
-      const key = page.replace(entryFileName, 'index');
-      // config[key] = ['babel-polyfill', path.join(cwd, page)];
+      const key = page.replace(entryFileName, '');
       config[key] = path.join(cwd, page);
     });
     return config;
@@ -55,7 +55,10 @@ export default (packing) => {
   // 网站自定义配置
   p.rewriteRules = {
     // 网站URL与模版的对应路由关系
-    '^/$': '/test.pug',
+    '^/$': '/mui-test',
+    '^/mui-test.html$': '/mui-test',
+    // {{insert route floating flag}}
+
     // API转发
     '^/api/(.*)': 'require!/mock/api/$1.js'
   };
